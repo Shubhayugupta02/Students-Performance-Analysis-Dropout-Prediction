@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+<h2>Prediction History</h2>
+
+<table>
+<tr>
+<th>Attendance</th><th>Marks</th><th>Study</th>
+<th>Failures</th><th>Risk</th><th>Score</th><th>Time</th>
+</tr>
+
+{% for r in records %}
+<tr>
+<td>{{r.attendance}}</td>
+<td>{{r.marks}}</td>
+<td>{{r.study_hours}}</td>
+<td>{{r.failures}}</td>
+<td>{{r.risk}}</td>
+<td>{{r.score}}</td>
+<td>{{r.timestamp}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+
+{% endblock %}

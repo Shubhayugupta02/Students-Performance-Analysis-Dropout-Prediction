@@ -1,0 +1,7 @@
+flask
+firebase-admin
+python-dotenv
+numpy
+pandas
+scikit-learn
+joblib

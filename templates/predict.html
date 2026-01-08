@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card neon-card">
+
+  <h2 class="title">Student Risk Prediction</h2>
+
+  <select id="model">
+    <option value="rule">Rule Based</option>
+    <option value="logistic">Logistic Regression</option>
+    <option value="random_forest">Random Forest</option>
+  </select>
+
+  <input id="attendance" type="number" min="0" max="100" placeholder="Attendance (%)">
+  <input id="marks" type="number" min="0" max="100" placeholder="Marks (%)">
+  <input id="study_hours" type="number" min="0" max="10" placeholder="Study Hours / Day">
+  <input id="failures" type="number" min="0" max="10" placeholder="Failures">
+
+  <button onclick="analyzeRisk()">Analyze Risk</button>
+
+  <div id="alertBox"></div>
+  <div id="result-box"></div>
+
+  <div class="chart-area">
+    <div id="confidenceGauge"></div>
+    <div id="importanceBar"></div>
+  </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='predict.js') }}"></script>
+{% endblock %}

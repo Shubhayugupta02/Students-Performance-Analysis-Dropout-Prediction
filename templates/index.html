@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+  <h2>System Overview</h2>
+
+  <p>
+    This system combines classical analytics with modern machine learning
+    to identify students at academic risk. It considers attendance,
+    academic performance, consistency, and failure history.
+  </p>
+
+  <ul class="overview-list">
+    <li>Attendance-based risk weighting</li>
+    <li>Multiple ML models (Logistic + RandomForest + Boosting)</li>
+    <li>Real-time Firebase data storage</li>
+    <li>Google Charts visualization</li>
+  </ul>
+</div>
+
+{% endblock %}
