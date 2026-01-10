@@ -4,6 +4,18 @@ This project focuses on analyzing student academic performance and predicting dr
 
 ---
 
+## Team Information
+- **Team Name:** Tech Coders
+- **Team Leader:** Shubhayu Gupta
+- **Team Members:**
+  - Shubhayu Gupta
+  - Mohar Das
+  - Shounak Gupta
+
+---
+
+
+
 ## Problem Statement
 Educational institutions often lack early-warning systems to identify students at risk of poor academic performance or dropout. Manual analysis is time-consuming and reactive. This project aims to provide an automated, data-driven solution to predict student risk levels in advance.
 
@@ -96,3 +108,4 @@ This project demonstrates how machine learning and modern web technologies can b
 
 ## Author
 Developed as part of an academic and innovation project for student performance analysis and dropout risk prediction.
+
